@@ -7,7 +7,7 @@ import JobsContainer from "./JobsContainer";
 import Job from "./Job";
 import Logo from "./Logo";
 import Loading from "./Loading";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 import NavLinks from "./NavLinks";
 import PageBtnContainer from "./PageBtnContainer";
 import SearchContainer from "./SearchContainer";
