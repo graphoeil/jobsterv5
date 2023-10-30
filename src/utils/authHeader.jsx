@@ -1,5 +1,5 @@
 // Auth header (Bearer)
-// With avoid to declare headers for each request ;-)
+// To avoid to declare headers for each request ;-)
 const authHeader = (thunkAPI) => {
 	return {
 		headers:{

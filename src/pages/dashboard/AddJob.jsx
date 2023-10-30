@@ -30,10 +30,7 @@ const AddJob = () => {
 	// Get job location from user
 	useEffect(() => {
 		if (!isEditing){
-			dispatch(handleChange({
-				name:'jobLocation',
-				value:user.location
-			}));
+			dispatch(handleChange({ name:'jobLocation', value:user.location }));
 		}
 	}, [isEditing, dispatch, user]);
 

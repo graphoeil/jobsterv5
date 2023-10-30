@@ -9,9 +9,8 @@ import Wrapper from "../assets/wrappers/Job";
 import JobInfoWrapper from "../assets/wrappers/JobInfo";
 
 /* React normally re-renders a component whenever its parent re-renders. 
-With memo, you can create a component that React will not re-render 
-when its parent re-renders so long as its new props are the same 
-as the old props. Such a component is said to be memoized. */
+With memo, you can create a component that React will not re-render when 
+its parent re-renders so long as its new props are the same as the old props. */
 
 // Job info component
 const jobInfo = ({ icon, text }) => {
