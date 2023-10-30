@@ -38,7 +38,7 @@ export const updateUserThunkFn = async(user, thunkAPI) => {
 		return thunkAPI.rejectWithValue(firstLetterUpper(error.response.data.msg));
 	}
 };
-// Clear all value when logout
+// Clear all values when logout
 export const clearStoreThunkFn = async(message, thunkAPI) => {
 	try {
 		// Logout user

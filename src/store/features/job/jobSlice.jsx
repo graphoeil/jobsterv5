@@ -5,17 +5,11 @@ import { getUserFromLocalStorage } from "../../../utils/localStorage";
 import { createJobThunkFn, deleteJobThunkFn, editJobThunkFn } from "./jobThunk";
 
 // Initial state
-const initialState = {
-	isLoading:false,
-	position:'',
-	company:'',
+const initialState = { isLoading:false, position:'', company:'',
 	jobLocation:getUserFromLocalStorage()?.location || '',
 	jobTypeOptions:['full-time','part-time','remote','internship'],
-	jobType:'full-time',
-	statusOptions:['interview','declined','pending'],
-	status:'pending',
-	isEditing:false,
-	editJobId:''
+	jobType:'full-time', statusOptions:['interview','declined','pending'],
+	status:'pending', isEditing:false, editJobId:''
 };
 
 // Async
@@ -38,9 +32,7 @@ const jobSlice = createSlice({
 		},
 		// Set edit job, submitted from Job.jsx (component)
 		setEditJob:(state, { payload }) => {
-			/* Make a copy of the state, set isEditing to true
-			and overwrite state value passed in the payload, 
-			then we can edit the job in the form ;-) */
+			/* payload contain value of the edited job ;-) */
 			return { ...state, isEditing:true, ...payload };
 		}
 	},
